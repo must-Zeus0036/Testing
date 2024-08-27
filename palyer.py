@@ -24,3 +24,9 @@ class Player:
         """Return the player's total score."""
         return self.total_score
 
+
+if __name__ == "__main__":
+    player = Player("Adam")
+    player.add_turn_score(10)
+    player.add_total_score()
+    print(f"{player.name}'s total score is {player.get_total_score()}")
