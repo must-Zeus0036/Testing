@@ -65,3 +65,4 @@ if __name__ == "__main__":
     print(f"Rolled a {roll_result}!")
     for line in die.display(roll_result):
         print(line)
+        
