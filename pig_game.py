@@ -1,4 +1,3 @@
-# pig_game.py
 import sys
 import io
 
