@@ -1,4 +1,3 @@
-
 class Player:
     """Class representing a player in the game."""
 
@@ -23,6 +22,7 @@ class Player:
     def get_total_score(self):
         """Return the player's total score."""
         return self.total_score
+
 
 if __name__ == "__main__":
     player = Player("Adam")
