@@ -1,4 +1,9 @@
+# pig_game.py
+import sys
+import io
 
+# Set UTF-8 encoding for standard output
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 from die import Die
 from player import Player
