@@ -1,8 +1,10 @@
+# die.py
 import random
 
+
 class Die:
-    """Class representing a dice with ASCII"""
-    
+    """Class representing a die with ASCII art representations of its faces."""
+
     DICE_ART = {
         1: (
             "┌─────────┐",
@@ -59,10 +61,10 @@ class Die:
         """Return the ASCII art representation of the die face value."""
         return self.DICE_ART[value]
 
+
 if __name__ == "__main__":
     die = Die()
     roll_result = die.roll()
     print(f"Rolled a {roll_result}!")
     for line in die.display(roll_result):
         print(line)
-        
