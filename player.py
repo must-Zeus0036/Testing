@@ -20,6 +20,9 @@ class Player:
         self.total_score += self.turn_score
         self.reset_turn_score()
 
+    def get_total_score(self):
+        """Return the player's total score."""
+        return self.total_score
 
 if __name__ == "__main__":
     player = Player("Adam")
