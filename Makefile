@@ -25,3 +25,13 @@ clean:
 venv:
     python -m venv venv
     venv/Scripts/activate && pip install -r requirements.txt
+
+# Test target to run tests using pytest
+test:
+    venv/Scripts/activate && pytest
+
+# Clean target to remove temporary files
+clean:
+    find . -type f -name '*.pyc' -delete
+    find . -type d -name '__pycache__' -delete
+    rm -rf venv
