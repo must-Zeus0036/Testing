@@ -22,3 +22,6 @@ clean:
 	rm -rf $(VENV_DIR)
 	find . -type f -name '*.pyc' -delete
 	find . -type d -name '__pycache__' -delete
+venv:
+    python -m venv venv
+    venv/Scripts/activate && pip install -r requirements.txt
