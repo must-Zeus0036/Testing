@@ -7,4 +7,6 @@ class Player:
         self.total_score = 0
         self.turn_score = 0
 
-
+    def reset_turn_score(self):
+        """Reset the turn score to zero."""
+        self.turn_score = 0
