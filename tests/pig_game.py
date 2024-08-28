@@ -56,7 +56,7 @@ class TestPigGame(unittest.TestCase):
 
         # Check that the player's turn score is reset and no points are added to the total score
         self.assertEqual(self.game.players[0].turn_score, 0, "Turn score should be reset to 0 after rolling a 1.")
-        self.assertEqual(self.game.players[0].total_score, 0, "Total score should remain 0 after rolling a 1.") #pragma: no cover
+        self.assertEqual(self.game.players[0].total_score, 0, "Total score should remain 0 after rolling a 1.") 
         self.assertEqual(self.game.current_player_index, 1, "Turn should switch to the next player.")
 
     @patch('builtins.input', side_effect=['r', 'h', 'r', 'r', 'h', 'r', 'h'])
