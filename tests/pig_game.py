@@ -66,7 +66,7 @@ class TestPigGame(unittest.TestCase):
         self.game.die.roll = MagicMock(side_effect=[5, 5, 5, 5])
 
         with patch('builtins.print') as mock_print:  # Mock print to capture output
-            self.game.play_game()
+            self.game.play_game() #pragma: no cover
 
             # Check that the game ends with the correct winner
             self.assertIn("Alice wins with 20 points!", [args[0] for args in mock_print.call_args_list])
