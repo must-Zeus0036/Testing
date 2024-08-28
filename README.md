@@ -1,6 +1,6 @@
 :pig: Pig Dice Game :pig:
 
-This is a Python implementation of the Pig Dice game.
+This is a Python implementation of the Pig Dice game :crown:
 
 :game_die: How to Play :game_die:
 
